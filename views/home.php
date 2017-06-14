@@ -270,7 +270,7 @@
                             </div>
                             <div class="mdl-list">
                              <?php foreach($ultimosposts as $ultimopost): ?>
-                                <a href="#" class="mdl-navigation__link mdl-list__item"><?php echo $ultimopost['texto']; ?></a>
+                                <a href="<?php echo BASE; ?>" class="mdl-navigation__link mdl-list__item"><?php echo $ultimopost['texto']; ?></a>
                            <?php endforeach; ?>
                             </div>
 

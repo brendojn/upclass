@@ -94,7 +94,8 @@ class Postagens extends model
 		$sql = "SELECT 
 		*, (SELECT usuarios.nome FROM usuarios WHERE usuarios.id = postagens.id_usuario) as nome
 		FROM postagens  WHERE id_usuario IN(".implode(',', $ids).")
-		ORDER BY data_criacao DESC";
+		ORDER BY data_criacao DESC
+		LIMIT $limit";
 
 		$sql = $this->db->query($sql);
 

@@ -25,7 +25,7 @@ class homeController extends controller
 			$foto = array();
 			$file = array();
 
-			if (isset($_FILES['foto']) && !empty($_FILES['file'])){
+			if (isset($_FILES['foto']) && !empty($_FILES['foto'])){
 				$foto = $_FILES['foto'];
 			}
 			
