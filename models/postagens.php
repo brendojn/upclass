@@ -77,7 +77,9 @@ class Postagens extends model
 		return $array;
 	}
 	public function addComentario($id, $id_usuario, $txt){
-	$sql = "INSERT INTO posts_comentarios SET id_post = '$id', id_usuario= $id_usuario, data_criacao = NOW(), texto = '$txt'";
+
+	$sql = "INSERT INTO postagens_comment SET id_post = '$id', id_usuario= $id_usuario, data_criacao = NOW(), texto = '$txt'";
+	echo $sql; exit;
 	$this->db->query($sql);
 
 	}

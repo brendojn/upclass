@@ -49,7 +49,7 @@ class homeController extends controller
 		$dados['sugestoes'] = $a->getSugestoes(3);
 		$dados['requisicoes'] = $a->getRequisicoes();
 
-		$dados['ultimosposts'] = $p->getUltimosPosts();
+		$dados['ultimosposts'] = $p->getUltimosPosts(3);
 		$dados['acervo'] = $p->getAcervo();
 		$dados['grupos'] = $g->getGrupos();
 
