@@ -18,7 +18,7 @@ class perfilController extends controller
 		if(isset($_POST['nome']) && !empty($_POST['nome'])){
 
 			$nome = addslashes($_POST['nome']);
-			$disciplina = addslashes($_POST['nome']);
+			$disciplina = addslashes($_POST['disciplina']);
 			$instituicao = addslashes($_POST['instituicao']);
 			$metodologia = addslashes($_POST['metodologia']);
 

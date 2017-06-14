@@ -108,7 +108,7 @@
 
                                 <form method="POST">
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="nome" value="<?php echo $info['nome']; ?>">
+                                        <input class="mdl-textfield__input" type="text" name="nome" id="nome" value="<?php echo $info['nome']; ?>">
                                         <label class="mdl-textfield__label" for="nome">NOME</label>
                                     </div>
                               
@@ -118,22 +118,22 @@
                                         <?php echo $info['email']; ?>
                                     </div>
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="disciplina" value="<?php echo $info['instituicao']; ?>">
+                                        <input class="mdl-textfield__input" type="text" name="disciplina" id="disciplina" value="<?php echo $info['disciplina']; ?>">
                                         <label class="mdl-textfield__label" for="disciplina">DISCIPLINA</label>
                                     </div>
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="instituicao" value="<?php echo $info['disciplina']; ?>">
+                                        <input class="mdl-textfield__input" type="text" id="instituicao" name="instituicao" value="<?php echo $info['instituicao']; ?>">
                                         <label class="mdl-textfield__label" for="instituicao">INSTITUIÇÃO</label>
                                     </div>
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                        
                                         <strong>Metodologia:</strong></br>
-                                        <input class="mdl-textfield__input" type="text" id="metodologia" value="<?php echo $info['metodologia']; ?>">
+                                        <input class="mdl-textfield__input" type="text" name="metodologia" id="metodologia" value="<?php echo $info['metodologia']; ?>">
 
                                         
                                     </div>
                                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                        <input class="mdl-textfield__input" type="text" id="senha">
+                                        <input class="mdl-textfield__input" type="text" name="senha" id="senha">
                                         <label class="mdl-textfield__label" for="senha">SENHA</label>
                                     </div>
                                 
