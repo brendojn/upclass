@@ -72,12 +72,12 @@
             <nav class="navigation mdl-navigation">
                 <div class="card">
                     <img src="<?php echo BASE; ?>assets/img/avatar_m.png" class="img-circle" alt="Mônica">
-                    <h1>Mônica</h1>
-                    <p class="title">Professora de matemática</p>
-                    <p>Colégio Tiradentes</p>
-                    <a href="#"><i class="fa fa-facebook link-social"></i></a>
-                    <a href="#"><i class="fa fa-twitter link-social"></i></a>
-                    <a href="#"><i class="fa fa-linkedin link-social"></i></a>
+                   <h1><?php echo $viewData['usuario_nome']; ?></h1>
+                    <p class="title">Professor(a) de <?php echo $viewData['usuario_disciplina']; ?></p>
+                    <p><?php echo $viewData['usuario_instituicao']; ?></p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook link-social"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter link-social"></i></a>
+                    <a href="https://br.linkedin.com/"><i class="fa fa-linkedin link-social"></i></a>
                 </div>
                 <div class="mdl-layout-spacer"></div>
                     <div id="mini-atalhos">
@@ -86,9 +86,9 @@
 </button></div>
                         <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-acervo">
                             Meu Painel</div>
-                        <div id="btn-contatos"><button class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
+                        <div><a href="<?php echo BASE; ?>" id="btn-contatos"><button class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
   <i class="material-icons">supervisor_account</i>
-</button></div>
+</a></button></div>
                         <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-contatos">
                             Contatos
                         </div>

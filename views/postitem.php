@@ -15,11 +15,11 @@
 	
 	
 	<div class="postitem_botoes">
-	<button class="btn btn-warning" onclick="displayComentario(this)">Comentar</button>
+	<button class="btn btn-warning" onclick="displayComentario(this);return false;">Comentar</button>
 	<div class= "postitem_comentario">
 	<br/><br/>
 	<input type="text" class="postitem_txt form-control">
- 	<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-id="<?php echo $id; ?>" onclick="comentar(this)">
+ 	<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" data-id="<?php echo $id; ?>" onclick="comentar(this);return false;">
   	Enviar Comentário
 	</button>
 	</div>
