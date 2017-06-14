@@ -44,7 +44,7 @@
     <div class="header-content-inner">
       <img id="logo" src="assets/img/logo.png" alt="UPCLASS" class="logo-bg" href="www.upclass.com">
       <hr>
-      <p>Um portal feito para o Professor!</p>
+      <p>Suas aulas ainda mais incríveis!</p>
       <a href="#" class="btn btn-primary btn-xl page-scroll" data-toggle="modal" data-target="#myModal2">Cadastro</a>
       <a href="#" class="btn btn-primary btn-xl page-scroll" data-toggle="modal" data-target="#myModal">Login</a>
        </div>
@@ -54,10 +54,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 text-center">
-        <h2 class="section-heading">Somos uma empresa seria!</h2>
+        <h2 class="section-heading">A melhor plataforma para tornar <br>as suas aulas ainda mais incríveis!</h2>
         <hr class="light">
-        <p class="text-faded">Voltado a facilitar a organização dos educadores, criamos um portal no qual permite ao educador poder criar e armazenar planejamentos, acompanhar o desenvolvimento das turmas, vizualizar estatisticas e lançar a nota dos alunos.</p>
-        <a href="#" class="btn btn-default btn-xl" data-toggle="modal" data-target="#myModal2">Se interessou? Então Cadastre-se!</a> </div>
+        <p class="text-faded">Conecte-se com outros professores, discuta metodologias <br>e aprenda novas técnicas para aplicar em sala!</p><br>
+        <a href="#" class="btn btn-default btn-xl" data-toggle="modal" data-target="#myModal2">Se interessou? Então cadastre-se!</a> </div>
     </div>
   </div>
 </section>
@@ -65,35 +65,29 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Novidades da Edição Escolar</h2>
+        <h2 class="section-heading">Principais recursos</h2>
         <hr class="primary">
       </div>
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-6 text-center">
+      <div class="col-lg-4 col-md-6 text-center">
         <div class="service-box"> <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-          <h3>Gratis, Gratis, Gratis!</h3>
-          <p class="text-muted">Serviço 24Hrs Diamante, com os mesmos beneficios de um portal pago!</p>
+          <h3>Materiais de primeira!</h3>
+          <p class="text-muted">Os melhores conteúdos são sempre colocados em destaque para que você veja primeiro.</p>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 text-center">
-        <div class="service-box"> <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-          <h3>Servidores Robustos na Nuvem</h3>
-          <p class="text-muted">Garantimos o melhor uptime e tempo de reposta, o que nos diferencia de outros projetos gratuitos.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 text-center">
+      <div class="col-lg-4 col-md-6 text-center">
         <div class="service-box"> <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
           <h3>Sempre Atualizado!</h3>
-          <p class="text-muted">Estamos sempre adicionando novos recursos, e mantendo o portal sempre atualizado de acordo com a nessecidade dos educadores e alunos.</p>
+          <p class="text-muted">Estamos sempre adicionando novos recursos e atualizando de acordo com as necessidades dos educadores.</p>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 text-center">
+      <div class="col-lg-4 col-md-6 text-center">
         <div class="service-box"> <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-          <h3>Estamos pensando no futuro!</h3>
-          <p class="text-muted">Para que a educação no pais vá para frente, esté e apenas o primeiro passo de um grande projeto!</p>
+          <h3>Compartilhe seu conhecimento!</h3>
+          <p class="text-muted">Publique dicas e técnicas didáticas e torne-se referência na sua área!</p>
         </div>
       </div>
     </div>
@@ -130,7 +124,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h2 class="text-center"><img src="assets/layout/img/110.jpg" class="img-circle-40"><br>Login</h2>
+        <h2 class="text-center"><img src="assets/img/logos.png" class="logo-60"></h2><br>
       </div>
       <div class="modal-body row">
         <h6 class="text-center">Preencha os campos abaixo para o Login</h6>
@@ -148,9 +142,6 @@
           </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <h6 class="text-center"><a href="">A privacidade é importante para nós. Clique aqui para ler o porquê.</a></h6>
-      </div>
     </div>
   </div>
 </div>
@@ -162,7 +153,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h2 class="text-center"><img src="assets/layout/img/110.jpg" class="img-circle"><br>Cadastro</h2>
+        <h2 class="text-center"><img src="assets/img/logos.png" class="logo-60"></h2><br>
       </div>
       <div class="modal-body row">
         <h6 class="text-center">Preencha os campos abaixo para se cadastrar</h6>
@@ -181,7 +172,7 @@
             <input type="text" class="form-control input-lg" placeholder="Instituição" name="instituicao" id="instituicao" required maxlength="80">
           </div>
              <div class="form-group">
-             <textarea class="form-control" rows="5" id="comment" placeholder="Metodologia(Não é obrigatório)" name="metodologia" id="metodologia"></textarea>
+             <textarea class="form-control" rows="5" id="comment" placeholder="Metodologia(opcional)" name="metodologia" id="metodologia"></textarea>
              </div>
           <div class="form-group">
             <input type="password" class="form-control input-lg" placeholder="Senha" name="senha" id="senha" required>
@@ -193,9 +184,6 @@
               <input class="btn btn-danger btn-lg btn-block" type="submit" name="NEW_usuario" value="Cadastrar">
           </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <h6 class="text-center"><a href="">A privacidade é importante para nós. Clique aqui para ler o porquê.</a></h6>
       </div>
     </div>
   </div>
