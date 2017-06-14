@@ -61,7 +61,7 @@
                     <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="bottom-right-btn">
                         <li><a href="<?php echo BASE; ?>perfil" class="mdl-menu__item">Editar Perfil</a></li>
                         <li><a href="<?php echo BASE; ?>login/sair" class="mdl-menu__item">Sair</a></li>
-                        <li class="mdl-menu__item">Suporte</li>
+                       
                     </ul>
                 </div>
             </div>
