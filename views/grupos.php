@@ -106,19 +106,13 @@
                             <div class="mdl-card__title">
                                 <h2 class="mdl-card__title-text">Postar</h2>
                             </div>
-                            <div class="mdl-card-body">
-                                <form action="#">
-                                    <div class="mdl-textfield mdl-js-textfield">
-                                        <input class="mdl-textfield__input" type="text" id="titulo-post">
-                                        <label class="mdl-textfield__label" for="titulo-post">Título</label>
-                                    </div>
-                                </form>
+                            
                                 <form method="post" enctype="multipart/form-data">
                                     <div class="card-wide mdl-textfield mdl-js-textfield">
                                         <textarea id="texto-post" name="post" class="mdl-textfield__input" type="text" rows="3"></textarea>
                                         <label class="card-wide mdl-textfield__label" for="texto-post">Texto da publicação</label>
                                 </form>
-                                </div>
+                               
                                 <!-- ADICIONAR ICON ATTACH>COLLAPSE>EXIBIR TIPOS DE ANEXOS>COLLAPSE>EXIBIR BOTÃO PRA UPLOAD COPIAR JS DO HTML DE LOGIN-->
                                 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
                                     <div class="mdl-tabs__tab-bar">
@@ -154,170 +148,113 @@
                     <!-- /post-bar -->
                         <div class="card-wide mdl-card just-title mdl-shadow--2dp">
                             <div class="mdl-card__title">
-                                <h2 class="mdl-card__title-text">Publicações salvas</h2>
+                                <h2 class="mdl-card__title-text">Publicações no Grupo</h2>
                             </div>
                         </div>
                         <br>
-                        <div id="posts-salvos" class="mdl-grid">
-                            <div class="mdl-cell mdl-cell--2-col card-event mdl-card mdl-shadow--2dp">
-                                <div class="mdl-card__supporting-text mdl-card--expand">
-                                    <p>Título do post<br>Autor</p>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a onclick="eventDialog();" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-tabs__tab show-modal">Ler</a>
-                                    <dialog class="mdl-dialog  text-modal__border" id="event-panel">
-                                        <div class="mdl-dialog__content text-modal">
-                                            <div class="content white content -text--grey-800">
-                                                <div class="crumbs -text--grey-500">
-                                                    Google &gt; Material Design Lite &gt; How to install MDL
+                        <div id="posts-salvos" class="">
+                            <div class="blog blog--blogpost card-wide mdl-cell mdl-cell--8-col">
+                                <main class="mdl-layout__content">
+                                    <div class="blog__posts mdl-grid">
+                                        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+                                         <?php foreach($acervo as $postitem)
+                                          {
+                                            $this->loadView('postitem', $postitem);
+                                          }
+                                          ?>
+                                            <div class="mdl-card__title -text--grey-50">
+                                                <h3>On the road again</h3>
+                                            </div>
+                                            <div class="-text--grey-700 mdl-card__supporting-text meta">
+                                                <div class="minilogo"></div>
+                                                <div>
+                                                    <strong>The Newist</strong>
+                                                    <span>2 days ago</span>
                                                 </div>
-                                                <h3>How to install MDL</h3>
+                                                <div class="section-spacer"></div>
+                                                <div class="meta__favorites">
+                                                    425 <i class="material-icons" role="presentation">favorite</i>
+                                                    <span class="visuallyhidden">favorites</span>
+                                                </div>
+                                            </div>
+                                            <div class="-text--grey-700 mdl-card__supporting-text">
                                                 <p>
-                                                    Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing
-                                                    consectetur eu commodo officia. Ex cillum consequat mollit minim elit
-                                                    est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt.
-                                                    Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing.
-                                                    Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit
-                                                    aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
-                                                </p>
-                                                <p>
-                                                    Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute
-                                                    id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi
-                                                    sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint
-                                                    magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris
-                                                    fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis
-                                                    fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui
-                                                    do. Labore ullamco et minim proident est laborum mollit ad labore deserunt
-                                                    ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit
-                                                    eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim
-                                                    reprehenderit proident aute ad consectetur eiusmod.
+                                                    Cillum ullamco eu cupidatat excepteur Lorem minim sint quis officia irure irure sint fugiat nostrud. Pariatur Lorem irure
+                                                    excepteur Lorem non irure ea fugiat adipisicing esse nisi ullamco proident
+                                                    sint. Consectetur qui quis cillum occaecat ullamco veniam et Lorem cupidatat
+                                                    pariatur. Labore officia ex aliqua et occaecat velit dolor deserunt minim
+                                                    velit mollit irure. Cillum cupidatat enim officia non velit officia labore.
+                                                    Ut esse nisi voluptate et deserunt enim laborum qui magna sint sunt cillum.
+                                                    Id exercitation labore sint ea labore adipisicing deserunt enim commodo
+                                                    consectetur reprehenderit enim. Est anim nostrud quis non fugiat duis
+                                                    cillum. Aliquip enim officia ad commodo id.
                                                 </p>
                                             </div>
-                                            <div class="mdl-card__menu">
-                                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect close">
-      <i class="material-icons">close</i>
-    </button>
+                                            <div class="-text--primary-contrast mdl-card__supporting-text comments">
+                                                <form>
+                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                        <textarea rows=1 class="mdl-textfield__input" id="comment"></textarea>
+                                                        <label for="comment" class="mdl-textfield__label">Join the discussion</label>
+                                                    </div>
+                                                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+ <i class="material-icons" role="presentation">check</i><span class="visuallyhidden">add comment</span>
+ </button>
+                                                </form>
+                                                </form>
+                                                <div class="comment -text--grey-700">
+                                                    <header class="comment__header">
+                                                        <img src="images/co1.jpg" class="comment__avatar">
+                                                        <div class="comment__author">
+                                                            <strong>James Splayd</strong>
+                                                            <span>2 days ago</span>
+                                                        </div>
+                                                    </header>
+                                                    <div class="comment__text">
+                                                        In in culpa nulla elit esse. Ex cillum enim aliquip sit sit ullamco ex eiusmod fugiat. Cupidatat ad minim officia mollit
+                                                        laborum magna dolor tempor cupidatat mollit. Est velit sit ad aliqua
+                                                        ullamco laborum excepteur dolore proident incididunt in labore elit.
+                                                    </div>
+                                                    <nav class="comment__actions">
+                                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+ <i class="material-icons" role="presentation">thumb_up</i><span class="visuallyhidden">like comment</span>
+ </button>
+                                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+ <i class="material-icons" role="presentation">thumb_down</i><span class="visuallyhidden">dislike comment</span>
+ </button>
+                                                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+ <i class="material-icons" role="presentation">share</i><span class="visuallyhidden">share comment</span>
+ </button>
+                                                    </nav>
+                                                    <div class="comment__answers">
+                                                        <div class="comment">
+                                                            <header class="comment__header">
+                                                                <img src="images/co2.jpg" class="comment__avatar">
+                                                                <div class="comment__author">
+                                                                    <strong>John Dufry</strong>
+                                                                    <span>2 days ago</span>
+                                                                </div>
+                                                            </header>
+                                                            <div class="comment__text">
+                                                                Yep, agree!
+                                                            </div>
+                                                            <nav class="comment__actions">
+                                                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+ <i class="material-icons" role="presentation">thumb_up</i><span class="visuallyhidden">like comment</span>
+ </button>
+                                                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+ <i class="material-icons" role="presentation">thumb_down</i><span class="visuallyhidden">dislike comment</span>
+ </button>
+                                                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+ <i class="material-icons" role="presentation">share</i><span class="visuallyhidden">share comment</span>
+ </button>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </dialog>
-                                    <div class="mdl-layout-spacer"></div>
-                                    <button id="menu-top-right1" class="mdl-button mdl-js-button mdl-button--icon">
-                                    <i class="material-icons">more_vert</i>
-                                    </button>
-                                    <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="menu-top-right1">
-                                        <li class="mdl-menu__item">Indicar para amigo</li>
-                                        <li class="mdl-menu__item">Republicar no feed</li>
-                                        <li class="mdl-menu__item">Remover desta lista</li>
-                                    </ul>
-                                </div>
+                                    </div>
                             </div>
-                            <br>
-                                                        <div class="mdl-cell mdl-cell--2-col card-event mdl-card mdl-shadow--2dp">
-                                <div class="mdl-card__supporting-text mdl-card--expand">
-                                    <p>Título do post<br>Autor</p>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a onclick="eventDialog();" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-tabs__tab show-modal">Ler</a>
-                                    <dialog class="mdl-dialog  text-modal__border" id="event-panel">
-                                        <div class="mdl-dialog__content text-modal">
-                                            <div class="content white content -text--grey-800">
-                                                <div class="crumbs -text--grey-500">
-                                                    Google &gt; Material Design Lite &gt; How to install MDL
-                                                </div>
-                                                <h3>How to install MDL</h3>
-                                                <p>
-                                                    Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing
-                                                    consectetur eu commodo officia. Ex cillum consequat mollit minim elit
-                                                    est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt.
-                                                    Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing.
-                                                    Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit
-                                                    aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
-                                                </p>
-                                                <p>
-                                                    Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute
-                                                    id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi
-                                                    sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint
-                                                    magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris
-                                                    fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis
-                                                    fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui
-                                                    do. Labore ullamco et minim proident est laborum mollit ad labore deserunt
-                                                    ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit
-                                                    eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim
-                                                    reprehenderit proident aute ad consectetur eiusmod.
-                                                </p>
-                                            </div>
-                                            <div class="mdl-card__menu">
-                                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect close">
-      <i class="material-icons">close</i>
-    </button>
-                                            </div>
-                                        </div>
-                                    </dialog>
-                                    <div class="mdl-layout-spacer"></div>
-                                    <button id="menu-top-right1" class="mdl-button mdl-js-button mdl-button--icon">
-                                    <i class="material-icons">more_vert</i>
-                                    </button>
-                                    <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="menu-top-right1">
-                                        <li class="mdl-menu__item">Indicar para amigo</li>
-                                        <li class="mdl-menu__item">Republicar no feed</li>
-                                        <li class="mdl-menu__item">Remover desta lista</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <br>
-                                                        <div class="mdl-cell mdl-cell--2-col card-event mdl-card mdl-shadow--2dp">
-                                <div class="mdl-card__supporting-text mdl-card--expand">
-                                    <p>Título do post<br>Autor</p>
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a onclick="eventDialog();" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-tabs__tab show-modal">Ler</a>
-                                    <dialog class="mdl-dialog  text-modal__border" id="event-panel">
-                                        <div class="mdl-dialog__content text-modal">
-                                            <div class="content white content -text--grey-800">
-                                                <div class="crumbs -text--grey-500">
-                                                    Google &gt; Material Design Lite &gt; How to install MDL
-                                                </div>
-                                                <h3>How to install MDL</h3>
-                                                <p>
-                                                    Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing
-                                                    consectetur eu commodo officia. Ex cillum consequat mollit minim elit
-                                                    est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt.
-                                                    Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing.
-                                                    Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit
-                                                    aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
-                                                </p>
-                                                <p>
-                                                    Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute
-                                                    id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi
-                                                    sint consequat aliqua. Ex proident labore et laborum tempor fugiat sint
-                                                    magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris
-                                                    fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis
-                                                    fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui
-                                                    do. Labore ullamco et minim proident est laborum mollit ad labore deserunt
-                                                    ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit
-                                                    eu excepteur adipisicing culpa. Laborum cupidatat ullamco eu duis anim
-                                                    reprehenderit proident aute ad consectetur eiusmod.
-                                                </p>
-                                            </div>
-                                            <div class="mdl-card__menu">
-                                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect close">
-      <i class="material-icons">close</i>
-    </button>
-                                            </div>
-                                        </div>
-                                    </dialog>
-                                    <div class="mdl-layout-spacer"></div>
-                                    <button id="menu-top-right1" class="mdl-button mdl-js-button mdl-button--icon">
-                                    <i class="material-icons">more_vert</i>
-                                    </button>
-                                    <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="menu-top-right1">
-                                        <li class="mdl-menu__item">Indicar para amigo</li>
-                                        <li class="mdl-menu__item">Republicar no feed</li>
-                                        <li class="mdl-menu__item">Remover desta lista</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <br>
                         </div>
                     </div>
                     <!-- Paineis à direita -->

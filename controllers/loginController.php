@@ -13,7 +13,7 @@ class loginController extends controller
 
 			if($action == 'login') {
 				$email = addslashes($_POST['email']);
-				$senha = md5($_POST['senha']);
+				$senha =md5($_POST['senha']);
 
 				$dados['erro'] = $u->logar($email, $senha);
 			}
@@ -23,7 +23,7 @@ class loginController extends controller
 				$disciplina = addslashes($_POST['disciplina']);
 				$instituicao = addslashes($_POST['instituicao']);
 				$metodologia = addslashes($_POST['metodologia']);
-				$senha = md5($_POST['senha']);
+				$senha = addslashes($_POST['senha']);
 
 				$dados['erro'] = $u->cadastrar($nome, $email, $disciplina, $instituicao, $metodologia, $senha);
 			}

@@ -21,9 +21,11 @@ public function getSugestoes($limit = 5){
 			usuarios.nome
 		FROM 
 			usuarios
+		
 			
 		WHERE 
 			usuarios.id != '$meuid' 
+		
 			ORDER BY RAND()
 			LIMIT $limit
 			" ;
