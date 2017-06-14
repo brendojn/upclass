@@ -13,6 +13,7 @@ class perfilController extends controller
 			'usuario_nome' => ''
 			);
 		$u = new Usuarios();
+		$a = new Amizades();
 
 		if(isset($_POST['nome']) && !empty($_POST['nome'])){
 
@@ -44,6 +45,9 @@ class perfilController extends controller
 		
 		$dados['info'] = $u->getDados($_SESSION['lgclass']);
 		
+		$dados['requisicoes'] = $a->getRequisicoes();
+		$dados['sugestoes'] = $a->getSugestoes(3);
+
 		$this->loadTemplate('perfil', $dados);
 	}
 }

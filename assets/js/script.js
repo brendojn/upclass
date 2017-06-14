@@ -1,9 +1,10 @@
-function addFriend(id, obj) {
+function addAmigo(id, obj) {
 
     if(id != '') {
 
         $(obj).closest('.sugestaoitem').fadeOut();
 
+        console.log("ID: "+id);
         $.ajax({
             type:'POST',
             url:'ajax/add_friend',
