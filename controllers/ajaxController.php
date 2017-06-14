@@ -15,7 +15,7 @@ class ajaxController extends controller
 			$a->addAmigo($_SESSION['lgclass'], $id);
 		}
 	}
-	public function aceitar_amigo(){
+	public function aceitar_friend(){
 		if(isset($_POST['id']) && !empty($_POST['id'])){
 			$id = addslashes($_POST['id']);
 

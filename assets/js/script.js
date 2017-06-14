@@ -21,6 +21,7 @@ function addAmigo(id, obj) {
     {
         $(obj).closest('.requisicaoitem').fadeOut();
 
+        console.log("ID: "+id);
         $.ajax({
             type:'POST',
             url:'ajax/aceitar_friend',
