@@ -29,6 +29,20 @@ function addFriend(id, obj) {
 
 }
     
+
+function displayComentario(obj) {
+    $(obj).closest('.postitem_botoes').find('.postitem_comentario').show();
+}
+function comentar(obj) {
+    var id = $(obj).attr('data-id');
+    var txt = $(obj).closest('.postitem_comentario').find('.postitem_txt').val();
+
+    $.ajax({
+        type:'POST',
+        url:'ajax/comentar',
+        data:{id:id, txt:txt}
+    });
+}
 // script do authbox /
 function mostrarElemento(idElemento) {
     document.getElementById(idElemento).style.display = "block";

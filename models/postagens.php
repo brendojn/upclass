@@ -57,12 +57,14 @@ class Postagens extends model
 	}
 	public function getAcervo($id_grupo = '0') {
 		$array = array();
+
 		$a = new Amizades();
+
 		$ids = $a->getIdsFriends($_SESSION['lgclass']);
 		$ids[] = $_SESSION['lgclass'];
 
 		$sql = "SELECT 
-		*
+		*, (SELECT usuarios.nome FROM usuarios WHERE usuarios.id = postagens.id_usuario) as nome
 		FROM postagens  WHERE id_usuario IN(".implode(',', $ids).")
 		ORDER BY data_criacao DESC";
 
@@ -73,6 +75,11 @@ class Postagens extends model
 		}
 
 		return $array;
+	}
+	public function addComentario($id, $id_usuario, $txt){
+	$sql = "INSERT INTO posts_comentarios SET id_post = '$id', id_usuario= $id_usuario, data_criacao = NOW(), texto = '$txt'";
+	$this->db->query($sql);
+
 	}
 	  
 }

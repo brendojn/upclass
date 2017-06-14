@@ -1109,3 +1109,6 @@ a:hover {
     line-height: 50px;
 
 }
+.postitem_comentario{
+    display: none;
+}
