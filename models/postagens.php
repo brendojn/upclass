@@ -81,6 +81,27 @@ class Postagens extends model
 	$this->db->query($sql);
 
 	}
+	public function getUltimosPosts($limit = 3, $id_grupo = '0') {
+		$array = array();
+
+		$a = new Amizades();
+
+		$ids = $a->getIdsFriends($_SESSION['lgclass']);
+		$ids[] = $_SESSION['lgclass'];
+
+		$sql = "SELECT 
+		*, (SELECT usuarios.nome FROM usuarios WHERE usuarios.id = postagens.id_usuario) as nome
+		FROM postagens  WHERE id_usuario IN(".implode(',', $ids).")
+		ORDER BY data_criacao DESC";
+
+		$sql = $this->db->query($sql);
+
+		if($sql->rowCount() > 0) {
+			$array = $sql->fetchAll();
+		}
+
+		return $array;
+	}
 	  
 }
 

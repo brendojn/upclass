@@ -269,10 +269,11 @@
                                 <h4>Novidades na sua rede</h4>
                             </div>
                             <div class="mdl-list">
-                                <a href="#" class="mdl-navigation__link mdl-list__item">Como lidar com a violência na escola?</a>
-                                <a href="#" class="mdl-navigation__link mdl-list__item">Técnicas de memorização para alunos</a>
-                                <a href="#" class="mdl-navigation__link mdl-list__item">Trigonometria divertida</a>
+                             <?php foreach($ultimosposts as $ultimopost): ?>
+                                <a href="#" class="mdl-navigation__link mdl-list__item"><?php echo $ultimopost['texto']; ?></a>
+                           <?php endforeach; ?>
                             </div>
+
                         </div><br>
                          <div class="mdl-card mdl-shadow--2dp" id="pedidos-contato">
                             <div class="mdl-card__title">
