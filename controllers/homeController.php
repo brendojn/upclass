@@ -12,6 +12,7 @@ class homeController extends controller
 		$u = new Usuarios();
 		$p = new Postagens();
 		$a = new Amizades();
+		$g = new Grupos();
 
 		$dados['usuario_nome'] = $u->getNome($_SESSION['lgclass']);
 		$dados['usuario_disciplina'] = $u->getDisciplina($_SESSION['lgclass']);
@@ -36,10 +37,20 @@ class homeController extends controller
 			$p->addPostagens($postmsg, $foto, $file);
 		}
 
+		if(isset($_POST['grupo']) && !empty($_POST['grupo'])){
+
+			$grupo = addslashes($_POST['grupo']);
+
+			$id_grupo = $g->criar($grupo);
+			header("Location: ".BASE."grupos/abrir/".$id_grupo);
+		}
+
+
 		$dados['sugestoes'] = $a->getSugestoes(3);
 		$dados['requisicoes'] = $a->getRequisicoes();
 
 		$dados['acervo'] = $p->getAcervo();
+		$dados['grupos'] = $g->getGrupos();
 
 		$this->loadTemplate('home', $dados);
 	}

@@ -29,12 +29,13 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
+  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="assets/css/material.css">
+    <link rel="stylesheet" href="<?php echo BASE; ?>assets/css/material.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="<?php echo BASE; ?>assets/css/bootstrap.min.css">
+    <link href="<?php echo BASE; ?>assets/css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,7 +58,8 @@
             <i class="material-icons">more_vert</i>
           </button>
                     <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="bottom-right-btn">
-                        <li class="mdl-menu__item">Sair</li>
+                    <li><a href="<?php echo BASE; ?>perfil" class="mdl-menu__item">Editar Perfil</a></li>
+                        <li><a href="<?php echo BASE; ?>login/sair" class="mdl-menu__item">Sair</a></li>
                         <li class="mdl-menu__item">Suporte</li>
                     </ul>
                 </div>
@@ -65,11 +67,11 @@
         </header>
         <div class="drawer mdl-layout__drawer blue-grey-900 -text--blue-grey-50 fixed">
             <header class="drawer-header">
-                <img id="logo" src="assets/img/logos.png" alt="UPCLASS" class="logo-sm" href="www.upclass.com">
+                <img id="logo" src="<?php echo BASE; ?>assets/img/logos.png" alt="UPCLASS" class="logo-sm" href="www.upclass.com">
             </header>
             <nav class="navigation mdl-navigation">
                 <div class="card">
-                    <img src="assets/img/avatar_m.png" class="img-circle" alt="Mônica">
+                    <img src="<?php echo BASE; ?>assets/img/avatar_m.png" class="img-circle" alt="Mônica">
                     <h1>Mônica</h1>
                     <p class="title">Professora de matemática</p>
                     <p>Colégio Tiradentes</p>
@@ -347,20 +349,10 @@
                             </div>
                             <div class="mdl-list">
                                 <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
- <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
+ <img class="mdl-chip__contact" src="<?php echo BASE; ?>assets/img/user.jpg"></img>
  <span class="mdl-chip__text">Adrienne</span>
                                 <a href="#" class="mdl-chip__action"><i class="material-icons">add</i></a>
-                                </span><br>
-                                <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
- <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
- <span class="mdl-chip__text">Roberto</span>
-                                <a href="#" class="mdl-chip__action"><i class="material-icons">add</i></a>
-                                </span><br>
-                                <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
- <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
- <span class="mdl-chip__text">Joana</span>
-                                <a href="#" class="mdl-chip__action"><i class="material-icons">add</i></a>
-                                </span><br>
+                                
                             </div>
                         </div>
                         <!-- !Sugestões de contatos -->
@@ -371,11 +363,11 @@
         </main>
     </div>
 
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/material.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap-filestyle.min.js"></script>
+      <script src="<?php echo BASE; ?>assets/js/script.js"></script>
+    <script src="<?php echo BASE; ?>assets/js/material.js"></script>
+    <script src="<?php echo BASE; ?>assets/js/jquery.min.js"></script>
+    <script src="<?php echo BASE; ?>assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="<?php echo BASE; ?>assets/js/bootstrap-filestyle.min.js"></script>
 </body>
 
 </html>

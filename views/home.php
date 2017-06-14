@@ -279,6 +279,24 @@
                                 <a href="#" class="mdl-navigation__link mdl-list__item">Trigonometria divertida</a>
                             </div>
                         </div><br>
+                         <div class="mdl-card mdl-shadow--2dp" id="pedidos-contato">
+                            <div class="mdl-card__title">
+                                <h4>Grupos</h4>
+                                </div>
+                                <form method="POST">
+                              <div panel class="mdl-list">
+                               <input class="mdl-textfield__input" type="text" name="grupo" id="grupos">
+                                <label class="mdl-textfield__label" for="grupos">GRUPOS</label>
+                                <button id="btn-publicar" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" value="Enviar">
+                                   CRIAR
+                                    </button>
+                            
+                            </form>
+                                <?php foreach($grupos as $grupo): ?>
+            <a href="<?php echo BASE; ?>grupos/abrir/<?php echo $grupo['id']; ?>"><?php echo $grupo['titulo']; ?></a>
+            <?php endforeach; ?>
+            </div>
+                            </div></br>
                         <!-- Pedidos de contatos -->
                         <div class="mdl-card mdl-shadow--2dp" id="pedidos-contato">
                             <div class="mdl-card__title">
