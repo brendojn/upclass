@@ -308,7 +308,7 @@
                                 <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
                                 <img class="mdl-chip__contact" src="assets/img/user.jpg"></img>
                                 <span class="mdl-chip__text"><?php echo $pessoa['nome']; ?></span>
-                                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="aceitarAmigo('<?php echo $pessoa['id']; ?>', this);return false;">
+                                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="aceitarFriend('<?php echo $pessoa['id']; ?>', this);return false;">
                                 <i class="material-icons">add</i>
                                 </button>
                                 

@@ -17,11 +17,11 @@ function addAmigo(id, obj) {
     
     function aceitarFriend(id, obj){
 
-            if(id != '') 
-    {
+            if(id != '')   {
+                alert("...");
         $(obj).closest('.requisicaoitem').fadeOut();
 
-        console.log("ID: "+id);
+        
         $.ajax({
             type:'POST',
             url:'ajax/aceitar_friend',
