@@ -80,17 +80,12 @@
                 </div>
                 <div class="mdl-layout-spacer"></div>
                     <div id="mini-atalhos">
-                        <div id="btn-acervo"><button id="btn-acervo" class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
+                        <div id="btn-acervo"><button><a href="<?php echo BASE; ?>" id="btn-acervo"  class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
   <i class="material-icons">home</i>
-</button></div>
+</a></button></div>
                         <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-acervo">
-                            Meu Painel</div>
-                        <div id="btn-contatos"><button class="mini-atalho mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--colored-white">
-  <i class="material-icons">supervisor_account</i>
-</button></div>
-                        <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="btn-contatos">
-                            Contatos
-                        </div>
+                            Home</div>
+                       
                 
             </nav>
             </div>
